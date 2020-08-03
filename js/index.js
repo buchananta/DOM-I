@@ -39,4 +39,13 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let codeSnippet = document.getElementById('cta-img');
+//codeSnippet.src = 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80';
+codeSnippet.src = 'img/header-img.png';
+let middleImage = document.querySelector('#middle-img');
+middleImage.src = 'img/mid-page-accent.jpg';
+let nav = document.querySelector('nav');
+nav.style.color = 'green'; //this works, but does nothing, because A) no text displayed
+                           // and B) it's over-ridden by the index.css for the anchor tags.

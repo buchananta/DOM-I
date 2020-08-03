@@ -47,5 +47,19 @@ codeSnippet.src = 'img/header-img.png';
 let middleImage = document.querySelector('#middle-img');
 middleImage.src = 'img/mid-page-accent.jpg';
 let nav = document.querySelector('nav');
-nav.style.color = 'green'; //this works, but does nothing, because A) no text displayed
-                           // and B) it's over-ridden by the index.css for the anchor tags.
+
+//I really want to get these child nodes appended programmatically, but because the data is JSON, it's super hard to iterate through, or grab specific elements programmatically. I've tried like 3 different ways, probably going to end up settling with a closure.
+//I can see a better way to do this now, but this is surprisingly clean. Plus it's kinda neat.
+const nextNav= function() {
+  let keys = Object.keys(siteContent.nav)
+  keys.reverse();
+  return () => siteContent.nav[keys.pop()];
+}();
+
+
+for(node of nav.children) {
+  node.textContent = nextNav();
+}
+ 
+
+nav.style.color = 'green'; 

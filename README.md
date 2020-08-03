@@ -40,7 +40,7 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 * [X] Change the color of the navigation text to be green.
 * [x] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
-* [ ] Check your work by looking at the [original html](original.html) in the browser
+* [x] Check your work by looking at the [original html](original.html) in the browser
 
 ### Task 2b: Exit Ticket
 
@@ -50,8 +50,8 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 ### Task 3: Stretch 
 
-* [ ] Update styles throughout the page as you see fit. Study what happens when you updated the DOM using style in JavaScript.  
-* [ ] Study tomorrow's lesson on events and try to integrate a button that can update content on the site with a click of a button.  You could build a similar data object with new values to help you test the click event.
+* [x] Update styles throughout the page as you see fit. Study what happens when you updated the DOM using style in JavaScript.  
+* [x] Study tomorrow's lesson on events and try to integrate a button that can update content on the site with a click of a button.  You could build a similar data object with new values to help you test the click event.
 
 #### Stretch Project: Digital Timer
 

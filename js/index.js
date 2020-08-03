@@ -42,7 +42,6 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let codeSnippet = document.getElementById('cta-img');
-//codeSnippet.src = 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80';
 codeSnippet.src = siteContent.cta['img-src'];
 let middleImage = document.querySelector('#middle-img');
 middleImage.src = siteContent["main-content"]["middle-img-src"];
@@ -104,3 +103,17 @@ for(node of contact.children)
   node.textContent = nextContact();
 let footer = document.querySelector('footer');
 footer.innerHTML = `<p> ${siteContent.footer.copyright}</p>`;
+
+//obligatory stretch
+document.querySelector('h1').style.color = '#F60';
+let btn = document.querySelector('button');
+let counter = document.createElement('p');
+counter.textContent = 0;
+counter.id = '#counter';
+counter.style['font-size'] = '5rem';
+btn.addEventListener('click', function() {
+  if (!document.querySelector('#counter')) {
+   btn.parentNode.insertBefore(counter, btn); 
+  }
+  return counter.textContent++;
+})
